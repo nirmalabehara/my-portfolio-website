@@ -312,7 +312,7 @@ nav .fa-solid{
 }
 @media only screen and (max-width: 600px){
   #header{
-    background-image: url(images/small_pic.png);
+    background-image: url(small_pic.png);
   }
   .header-text{
     margin-top: 69%;
