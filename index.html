@@ -12,17 +12,19 @@
         <div class="container">
             <nav>
                 <img src="images/logo.png" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#certificates">Certificates</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Full Stack Web Developer</p>
-                <h1 class="typing">Hi, I'm <span>Nirmala</span> Behara</h1>
+                <h1>Hi, I'm <span>Nirmala</span> Behara</h1>
 
             </div>
 
@@ -153,7 +155,7 @@
         <p>📱 <strong>Phone:</strong> +91-7416451654</p>
         <p>🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nirmala-behara-371067302/" target="_blank">linkedin.com</a></p>
         <p>💻 <strong>GitHub:</strong> <a href="https://github.com/nirmalabehara" target="_blank">github.com</a></p>
-        <p>📄 <strong>Resume:</strong> <a href="nirmala-resume.pdf" target="_blank">Download Resume</a></p>
+        <p>📄 <strong>Resume:</strong> <a href="images/nirmala-resume.pdf" target="_blank">Download Resume</a></p>
         <p>📷 <strong>Instagram:</strong> <a href="https://www.instagram.com/nimmi__xoxo_" target="_blank">@nimmi__xoxo_</a></p>
       </div>
       <div class="contact-form">
@@ -202,6 +204,15 @@
         console.error(error);
       });
   });
+</script>
+<script>
+  var sidemenu=document.getElementById("sidemenu");
+  function openmenu(){
+    sidemenu.style.right="0";
+  }
+  function closemenu(){
+    sidemenu.style.right="-200px";
+  }
 </script>
 
 </body>
